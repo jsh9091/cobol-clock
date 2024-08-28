@@ -1,2 +1,2 @@
 # cobol-clock
- Cobol Clock is a Fitbit watch-face designed to look like a short COBOL program.
+Have you ever found yourself looking at your smartwatch and find yourself wishing the watch-face displayed information in a way that resembled a verbose high level programming language from the 1950s? Of course not, that would be silly. Well, here it is anyway. 
