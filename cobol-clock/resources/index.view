@@ -1,3 +1,33 @@
 <svg>
   <rect id="background" />
+  <text x="10%" y="15%" class="defaultText"
+   >       IDENTIFICATION DIVISION.</text>
+  <text x="10%" y="20%" class="defaultText">
+       PROGRAM-ID. Cobol-clock.</text>
+  <text x="10%" y="25%" class="defaultText">
+       DATE-WRITTEN. 08/27/2024</text>
+  <text x="10%" y="30%" class="defaultText">
+       DATA DIVISION.</text>
+  <text x="10%" y="35%" class="defaultText">
+       WORKING-STORAGE SECTION.</text>
+  <text x="10%" y="40%" class="defaultText">
+      01 TIME_GROUP.</text>
+  <text x="10%" y="45%" class="defaultText">
+       02 HOUR         PIC 9(2) VALUE 9.</text>
+  <text x="10%" y="50%" class="defaultText">
+       02 MINUTE       PIC 9(2) VALUE 57.</text>
+  <text x="10%" y="55%" class="defaultText"></text>
+  <text x="10%" y="60%" class="defaultText">
+       01 STEPS        PIC 9(5) VALUE 4556.</text>
+  <text x="10%" y="65%" class="defaultText">
+       01 STEPS_HOUR   PIC 9(5) VALUE 250.</text>
+  <text x="10%" y="70%" class="defaultText">
+       01 BATTERY      PIC 9(3) VALUE 100.</text>
+  <text x="10%" y="75%" class="defaultText"></text>
+  <text x="10%" y="80%" class="defaultText">
+       PROCEDURE DIVISION.</text>
+  <text x="10%" y="85%" class="defaultText">
+       DISPLAY "Hello world". </text>
+  <text x="10%" y="90%" class="defaultText">
+       STOP RUN.</text>
 </svg>
