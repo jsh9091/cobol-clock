@@ -22,15 +22,15 @@
   fill: green
 }
 
-#area-A {
+.area-A-col {
   x: 17%
 }
 
-#pic-col {
+.pic-col {
   x: 48%
 }
 
-#value-col {
+.value-col {
   x: 82%
 }
 

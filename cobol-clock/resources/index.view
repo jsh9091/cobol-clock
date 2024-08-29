@@ -1,74 +1,74 @@
 <svg>
      <rect id="background" />
-     <text id="area-A" class="keyword defaultText row1">
+     <text class="keyword defaultText row1 area-A-col">
           IDENTIFICATION DIVISION.</text>
 
-     <text id="area-A" class="keyword defaultText row2">
+     <text class="keyword defaultText row2 area-A-col">
           PROGRAM-ID.</text>
      <text x="48%" class="comment defaultText row2">
           Cobol-clock.</text>
 
-     <text id="area-A" class="keyword defaultText  row3">
+     <text class="keyword defaultText row3 area-A-col">
           DATE-WRITTEN.</text>
      <text x="53%" class="comment defaultText  row3">
           Aug 27, 2024</text>
 
-     <text id="area-A" class="keyword defaultText row4">
+     <text class="keyword defaultText row4 area-A-col">
           DATA DIVISION.</text>
-     <text id="area-A" class="keyword defaultText row5">
+     <text class="keyword defaultText row5 area-A-col">
           WORKING-STORAGE SECTION.</text>
-     <text id="area-A" class="defaultText row6">
+     <text class="defaultText row6 area-A-col">
           01 TIME_GROUP.</text>
 
-     <text id="area-A" class="defaultText  row7">
+     <text class="defaultText row7 area-A-col">
           02 HOUR</text>
-     <text id="pic-col" class="defaultText row7">
+     <text class="defaultText row7 pic-col">
           PIC 9(2) VALUE</text>
-     <text id="value-col" class="value defaultText row7">
+     <text class="value defaultText row7 value-col">
           9.</text>
 
-     <text id="area-A" class="defaultText row8">
+     <text class="defaultText row8 area-A-col">
           02 MINUTE</text>
-     <text id="pic-col" class="defaultText row8">
+     <text class="defaultText row8 pic-col">
           PIC 9(2) VALUE</text>
-     <text id="value-col" class="value defaultText row8">
+     <text class="value defaultText row8 value-col">
           57.</text>
 
-     <text id="area-A" class="defaultText row9">
+     <text class="defaultText row9 area-A-col">
           02 AM_PM</text>
-     <text id="pic-col" class="defaultText row9">
+     <text class="defaultText row9 pic-col">
           PIC X(2) VALUE</text>
-     <text id="value-col" class="string-literal defaultText row9">
+     <text class="string-literal defaultText row9 value-col">
           "PM".</text>
 
-     <text id="area-A" class="defaultText row10">
+     <text class="defaultText row10 area-A-col">
           01 STEPS</text>
-     <text id="pic-col" class="defaultText row10">
+     <text class="defaultText row10 pic-col">
           PIC 9(5) VALUE</text>
-     <text id="value-col" class="value defaultText row10">
+     <text class="value defaultText row10 value-col">
           4556.</text>
 
-     <text id="area-A" class="defaultText row11">
+     <text class="defaultText row11 area-A-col">
           01 FLOORS</text>
-     <text id="pic-col" class="defaultText row11">
+     <text class="defaultText row11 pic-col">
           PIC 9(5) VALUE</text>
-     <text id="value-col" class="value defaultText row11">
+     <text class="value defaultText row11 value-col">
           15.</text>
      
-     <text id="area-A" class="defaultText row12">
+     <text class="defaultText row12 area-A-col">
           01 BATTERY</text>
-     <text id="pic-col" class="defaultText row12">
+     <text class="defaultText row12 pic-col">
           PIC 9(3) VALUE</text>
-     <text id="value-col" class="value defaultText row12">
+     <text class="value defaultText row12 value-col">
           100.</text>
 
-     <text id="area-A" class="keyword defaultText row13">
+     <text class="keyword defaultText row13 area-A-col">
           PROCEDURE DIVISION.</text>
-     <text id="area-A" class="keyword defaultText row14">
+     <text class="keyword defaultText row14 area-A-col">
           DISPLAY</text>
      <text x="38%" class="string-literal defaultText row14">
           "Hello world".</text>
 
-     <text id="area-A" class="keyword defaultText row15">
+     <text class="keyword defaultText row15 area-A-col">
           STOP RUN.</text>
 </svg>
