@@ -22,8 +22,16 @@
   fill: forestgreen
 }
 
+.number {
+  fill: paleturquoise
+}
+
 .area-A-col {
   x: 17%
+}
+
+.variable-name-col {
+  x: 23%
 }
 
 .pic-col {
