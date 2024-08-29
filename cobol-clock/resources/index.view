@@ -1,65 +1,64 @@
 <svg>
      <rect id="background" />
-     <text y="15%" id="area-A" class="defaultText area-A">
+     <text id="area-A" class="defaultText row1">
           IDENTIFICATION DIVISION.</text>
-     <text y="20%" id="area-A" class="defaultText">
+     <text id="area-A" class="defaultText row2">
           PROGRAM-ID. Cobol-clock.</text>
-     <text y="25%" id="area-A" class="defaultText">
+     <text id="area-A" class="defaultText  row3">
           DATE-WRITTEN. 08/27/2024</text>
-     <text y="30%" id="area-A" class="defaultText">
+     <text id="area-A" class="defaultText row4">
           DATA DIVISION.</text>
-     <text y="35%" id="area-A" class="defaultText">
+     <text id="area-A" class="defaultText row5">
           WORKING-STORAGE SECTION.</text>
-     <text y="40%" id="area-A" class="defaultText">
+     <text id="area-A" class="defaultText row6">
           01 TIME_GROUP.</text>
 
-     <text y="45%" id="area-A" class="defaultText">
+     <text id="area-A" class="defaultText  row7">
           02 HOUR</text>
-     <text y="45%" id="area-B" class="defaultText">
+     <text id="pic-col" class="defaultText row7">
           PIC 9(2) VALUE</text>
-     <text y="45%" id="value-col" class="defaultText">
+     <text id="value-col" class="defaultText row7">
           9.</text>
 
-     <text y="50%" id="area-A" class="defaultText">
+     <text id="area-A" class="defaultText row8">
           02 MINUTE</text>
-     <text y="50%" id="area-B" class="defaultText">
+     <text id="pic-col" class="defaultText row8">
           PIC 9(2) VALUE</text>
-     <text y="50%" id="value-col" class="defaultText">
+     <text id="value-col" class="defaultText row8">
           57.</text>
 
-     <text y="55%" id="area-A" class="defaultText">
+     <text id="area-A" class="defaultText row9">
           02 AM_PM</text>
-     <text y="55%" id="area-B" class="defaultText">
+     <text id="pic-col" class="defaultText row9">
           PIC X(2) VALUE</text>
-     <text y="55%" id="value-col" class="defaultText">
+     <text id="value-col" class="defaultText row9">
           "PM"</text>
 
-     <text y="60%" id="area-A" class="defaultText">
+     <text id="area-A" class="defaultText row10">
           01 STEPS</text>
-     <text y="60%" id="area-B" class="defaultText">
+     <text id="pic-col" class="defaultText row10">
           PIC 9(5) VALUE</text>
-     <text y="60%" id="value-col" class="defaultText">
+     <text id="value-col" class="defaultText row10">
           4556.</text>
 
-     <text y="65%" id="area-A" class="defaultText">
+     <text id="area-A" class="defaultText row11">
           01 FLOORS</text>
-     <text y="65%" id="area-B" class="defaultText">
+     <text id="pic-col" class="defaultText row11">
           PIC 9(5) VALUE</text>
-     <text y="65%" id="value-col" class="defaultText">
+     <text id="value-col" class="defaultText row11">
           15.</text>
      
-     <text y="70%" id="area-A" class="defaultText">
+     <text id="area-A" class="defaultText row12">
           01 BATTERY</text>
-     <text y="70%" id="area-B" class="defaultText">
+     <text id="pic-col" class="defaultText row12">
           PIC 9(3) VALUE</text>
-     <text y="70%" id="value-col" class="defaultText">
+     <text id="value-col" class="defaultText row12">
           100.</text>
-     
-     <text y="75%" id="area-A" class="defaultText"></text>
-     <text y="80%" id="area-A" class="defaultText">
+
+     <text id="area-A" class="defaultText row13">
           PROCEDURE DIVISION.</text>
-     <text y="85%" id="area-A" class="defaultText">
+     <text id="area-A" class="defaultText row14">
           DISPLAY "Hello world". </text>
-     <text y="90%" id="area-A" class="defaultText">
+     <text id="area-A" class="defaultText row15">
           STOP RUN.</text>
 </svg>
