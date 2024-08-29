@@ -6,6 +6,22 @@
   fill: white;
 }
 
+.keyword {
+  fill: deepskyblue
+}
+
+.string-literal {
+  fill: goldenrod
+}
+
+.value {
+  fill: firebrick
+}
+
+.comment {
+  fill: green
+}
+
 #area-A {
   x: 17%
 }
@@ -21,7 +37,7 @@
 #background {
   width: 100%;
   height: 100%;
-  fill: blue;
+  fill: black;
 }
 
 .row1 {
