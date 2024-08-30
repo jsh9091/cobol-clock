@@ -5,12 +5,12 @@
 
      <text class="keyword defaultText row2 area-A-col">
           PROGRAM-ID.</text>
-     <text x="48%" class="comment defaultText row2">
+     <text x="153" class="comment defaultText row2">
           Cobol-clock.</text>
 
      <text class="keyword defaultText row3 area-A-col">
           DATE-WRITTEN.</text>
-     <text x="53%" class="comment defaultText  row3">
+     <text x="172" class="comment defaultText  row3">
           Aug 27, 2024</text>
 
      <text class="keyword defaultText row4 area-A-col">
@@ -84,7 +84,7 @@
           PROCEDURE DIVISION.</text>
      <text class="keyword defaultText row14 area-A-col">
           DISPLAY</text>
-     <text x="38%" class="string-literal defaultText row14">
+     <text x="122" class="string-literal defaultText row14">
           "Hello world".</text>
 
      <text class="keyword defaultText row15 area-A-col">

@@ -27,15 +27,15 @@
 }
 
 .area-A-col {
-  x: 17%
+  x: "56"
 }
 
 .variable-name-col {
-  x: 23%
+  x: "80"
 }
 
 .pic-col {
-  x: 48%
+  x: "161"
 }
 
 .open-paren-col {
@@ -51,11 +51,11 @@
 }
 
 .val-keyword-col {
-  x: "225"
+  x: "226"
 }
 
 .value-col {
-  x: 83%
+  x: "280"
 }
 
 #background {
