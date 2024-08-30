@@ -23,7 +23,7 @@
 }
 
 .number {
-  fill: paleturquoise
+  fill: darkkhaki
 }
 
 .area-A-col {
@@ -38,8 +38,24 @@
   x: 48%
 }
 
+.open-paren-col {
+  x: "198"
+}
+
+.var-size-col {
+  x: "205"
+}
+
+.close-paren-col {
+  x: "214"
+}
+
+.val-keyword-col {
+  x: "225"
+}
+
 .value-col {
-  x: 82%
+  x: 83%
 }
 
 #background {
