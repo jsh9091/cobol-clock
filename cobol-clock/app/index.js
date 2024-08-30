@@ -36,7 +36,23 @@ const minuteLabel = document.getElementById("minuteLabel");
 const amPmLabel = document.getElementById("amPmLabel");
 const stepsLabel = document.getElementById("stepsLabel");
 const floorsLabel = document.getElementById("floorsLabel");
-//const batteryLabel = document.getElementById("batteryLabel");
+const batteryLabel = document.getElementById("batteryLabel");
+
+battery.onchange = (charger, evt) => {
+  updateBatteryLabel();
+};
+
+/**
+ * Updates the GUI for battery percentage. 
+ * An asterisk next to the percentage indicates that the watch is being charged. 
+ */
+function updateBatteryLabel() {
+  if (battery.charging) {
+    batteryLabel.text = battery.chargeLevel + "*.";
+  } else {
+    batteryLabel.text = battery.chargeLevel + ".";
+  }
+}
 
 clock.ontick = (evt) => {
     //console.log('Hours: ' + evt.date.getHours());
@@ -47,6 +63,7 @@ clock.ontick = (evt) => {
 
     updateTimeGroup(evt);
     updateExerciseFields();
+    updateBatteryLabel();
 }
 
 /**

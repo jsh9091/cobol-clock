@@ -95,8 +95,7 @@
      <text class="number defaultText row12 var-size-col">3</text>
      <text class="defaultText row12 close-paren-col">)</text>
      <text class="keyword defaultText row12 val-keyword-col">VALUE</text>
-     <text class="value defaultText row12 value-col">
-          100.</text>
+     <text class="value defaultText row12 value-col" id="batteryLabel" />
 
      <text class="keyword defaultText row13 area-A-col">
           PROCEDURE DIVISION.</text>
