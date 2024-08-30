@@ -1,3 +1,26 @@
+<!--
+  MIT License
+
+  Copyright (c) 2024 Joshua Horvath
+  
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+ 
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+ 
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE. -->
+
 <svg>
      <rect id="background" />
      <text class="keyword defaultText row1 area-A-col">
@@ -27,8 +50,7 @@
      <text class="number defaultText row7 var-size-col">2</text>
      <text class="defaultText row7 close-paren-col">)</text>
      <text class="keyword defaultText row7 val-keyword-col">VALUE</text>
-     <text class="value defaultText row7 value-col">
-          9.</text>
+     <text class="value defaultText row7 value-col" id="hourLabel" />
 
      <text class="number defaultText row8 area-A-col">02</text>
      <text class="defaultText row8 variable-name-col">MINUTE</text>
@@ -37,8 +59,7 @@
      <text class="number defaultText row8 var-size-col">2</text>
      <text class="defaultText row8 close-paren-col">)</text>
      <text class="keyword defaultText row8 val-keyword-col">VALUE</text>
-     <text class="value defaultText row8 value-col">
-          57.</text>
+     <text class="value defaultText row8 value-col" id="minuteLabel" />
 
      <text class="number defaultText row9 area-A-col">02</text>
      <text class="defaultText row9 variable-name-col">AM_PM</text>
@@ -47,8 +68,7 @@
      <text class="number defaultText row9 var-size-col">2</text>
      <text class="defaultText row9 close-paren-col">)</text>
      <text class="keyword defaultText row9 val-keyword-col">VALUE</text>
-     <text class="string-literal defaultText row9 value-col">
-          "PM".</text>
+     <text class="string-literal defaultText row9 value-col" id="amPmLabel" />
 
      <text class="number defaultText row10 area-A-col">01</text>
      <text class="defaultText row10 variable-name-col">STEPS</text>
