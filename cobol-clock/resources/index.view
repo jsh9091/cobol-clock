@@ -77,8 +77,7 @@
      <text class="number defaultText row10 var-size-col">5</text>
      <text class="defaultText row10 close-paren-col">)</text>
      <text class="keyword defaultText row10 val-keyword-col">VALUE</text>
-     <text class="value defaultText row10 value-col">
-          4556.</text>
+     <text class="value defaultText row10 value-col" id="stepsLabel" />
 
      <text class="number defaultText row11 area-A-col">01</text>
      <text class="defaultText row11 variable-name-col">FLOORS</text>
@@ -87,8 +86,7 @@
      <text class="number defaultText row11 var-size-col">5</text>
      <text class="defaultText row11 close-paren-col">)</text>
      <text class="keyword defaultText row11 val-keyword-col">VALUE</text>
-     <text class="value defaultText row11 value-col">
-          15.</text>
+     <text class="value defaultText row11 value-col" id="floorsLabel" />
      
      <text class="number defaultText row12 area-A-col">01</text>
      <text class="defaultText row12 variable-name-col">BATTERY</text>

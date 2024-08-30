@@ -27,7 +27,6 @@ import * as document from "document";
 import { today as activity, minuteHistory } from "user-activity";
 import { me as appbit } from "appbit";
 import { battery } from "power";
-import { user } from "user-profile";
 
 // Update the clock every minute
 clock.granularity = "minutes";
@@ -35,8 +34,8 @@ clock.granularity = "minutes";
 const hourLabel = document.getElementById("hourLabel");
 const minuteLabel = document.getElementById("minuteLabel");
 const amPmLabel = document.getElementById("amPmLabel");
-//const stepCountLabel = document.getElementById("stepCountLabel");
-//const floorsLabel = document.getElementById("floorsLabel");
+const stepsLabel = document.getElementById("stepsLabel");
+const floorsLabel = document.getElementById("floorsLabel");
 //const batteryLabel = document.getElementById("batteryLabel");
 
 clock.ontick = (evt) => {
@@ -47,6 +46,7 @@ clock.ontick = (evt) => {
     //console.log('Day of Month: ' + evt.date.getDate());  
 
     updateTimeGroup(evt);
+    updateExerciseFields();
 }
 
 /**
@@ -82,9 +82,21 @@ function zeroPad(i) {
       i = "0" + i;
     }
     return i;
-  }
+}
 
-console.log('Hello ' + getTitle() + ' Cobol Clock user!');
+/**
+ * Updates exercise fields in the GUI. 
+ */
+function updateExerciseFields() {
+  if (appbit.permissions.granted("access_activity")) {
+    stepsLabel.text = activity.adjusted.steps;
+    floorsLabel.text = activity.adjusted.elevationGain;
+  } else {
+    stepsLabel.text = "----";
+    floorsLabel.text = "----";
+  }
+}
+
 console.log('Battery: ' + battery.chargeLevel);
 console.log('Steps: ' + activity.adjusted.steps);
 console.log('Floors: ' + activity.adjusted.elevationGain);
@@ -100,18 +112,3 @@ console.log(minuteRecords.length);
 //console.log(`${minuteRecords[59]} steps.`);
 //console.log("Hourly steps?: " + minuteRecords);
 
-minuteRecords.forEach((minute, index) => {
-    //console.log(`${minute.steps} steps. ${index + 1} minute(s) ago.`);
-  });
-
-function getTitle() {
-    let title;
-    if (user.gender === 'male') {
-        title = 'Mr.';
-    } else if (user.gender === 'female') {
-        title = 'Ms.';
-    } else {
-        title = 'Mx.';
-    }
-    return title;
-}
