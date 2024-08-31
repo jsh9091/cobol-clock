@@ -31,6 +31,7 @@ import { battery } from "power";
 // Update the clock every minute
 clock.granularity = "minutes";
 
+const dateLabel = document.getElementById("dateLabel");
 const hourLabel = document.getElementById("hourLabel");
 const minuteLabel = document.getElementById("minuteLabel");
 const amPmLabel = document.getElementById("amPmLabel");
@@ -55,15 +56,40 @@ function updateBatteryLabel() {
 }
 
 clock.ontick = (evt) => {
-    //console.log('Hours: ' + evt.date.getHours());
-    //console.log('Minutes: ' + evt.date.getMinutes()); 
-    //console.log('Day of week: ' + evt.date.getDay());  // zero based - Sunday == 0
-    //console.log('Month: ' + (evt.date.getMonth() + 1));  // zero based - +1 to get expected number
-    //console.log('Day of Month: ' + evt.date.getDate());  
-
+    updateDateField(evt);
     updateTimeGroup(evt);
     updateExerciseFields();
     updateBatteryLabel();
+}
+
+/**
+ * Sets current date in GUI. 
+ * @param {*} evt 
+ */
+function updateDateField(evt) {
+  const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const monthNames = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+
+  let day = dayNames[evt.date.getDay()];
+  let month = monthNames[evt.date.getMonth()];
+  let dayOfMonth = evt.date.getDate();
+  let year = evt.date.getUTCFullYear();
+
+  dateLabel.text =
+    `${day}` + " " + `${month}` + " " + `${dayOfMonth}` + ", " + `${year}`;
 }
 
 /**
@@ -113,19 +139,3 @@ function updateExerciseFields() {
     floorsLabel.text = "----";
   }
 }
-
-console.log('Battery: ' + battery.chargeLevel);
-console.log('Steps: ' + activity.adjusted.steps);
-console.log('Floors: ' + activity.adjusted.elevationGain);
-console.log('Distance in Meters: ' + activity.adjusted.distance);
-console.log('calories: ' + activity.adjusted.calories);
-console.log('Active Zone Mins fatBurn: ' + activity.local.activeZoneMinutes.fatBurn);
-console.log('Active Zone Mins cardio: ' + activity.local.activeZoneMinutes.cardio);
-console.log('Active Zone Mins Peak: ' + activity.local.activeZoneMinutes.peak);
-console.log('Active Zone Mins total: ' + activity.local.activeZoneMinutes.total);
-//console.log('Hourly steps: ' + minuteHistory.query({ limit: 60 }));
-const minuteRecords = minuteHistory.query({ limit: 60 });
-console.log(minuteRecords.length);
-//console.log(`${minuteRecords[59]} steps.`);
-//console.log("Hourly steps?: " + minuteRecords);
-

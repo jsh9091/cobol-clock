@@ -33,8 +33,7 @@
 
      <text class="keyword defaultText row3 area-A-col">
           DATE-WRITTEN.</text>
-     <text x="172" class="comment defaultText  row3">
-          Aug 27, 2024</text>
+     <text x="172" class="comment defaultText  row3" id="dateLabel" />
 
      <text class="keyword defaultText row4 area-A-col">
           DATA DIVISION.</text>
