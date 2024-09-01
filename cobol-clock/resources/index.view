@@ -100,8 +100,7 @@
           PROCEDURE DIVISION.</text>
      <text class="keyword defaultText row14 area-A-col">
           DISPLAY</text>
-     <text x="122" class="string-literal defaultText row14">
-          "Hello world".</text>
+     <text x="122" class="string-literal defaultText row14" id="messageLabel" />
 
      <text class="keyword defaultText row15 area-A-col">
           STOP RUN.</text>

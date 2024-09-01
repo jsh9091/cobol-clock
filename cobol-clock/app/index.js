@@ -38,9 +38,11 @@ const amPmLabel = document.getElementById("amPmLabel");
 const stepsLabel = document.getElementById("stepsLabel");
 const floorsLabel = document.getElementById("floorsLabel");
 const batteryLabel = document.getElementById("batteryLabel");
+const messageLabel = document.getElementById("messageLabel");
 
 battery.onchange = (charger, evt) => {
   updateBatteryLabel();
+  updateMessageField();
 };
 
 /**
@@ -60,6 +62,7 @@ clock.ontick = (evt) => {
     updateTimeGroup(evt);
     updateExerciseFields();
     updateBatteryLabel();
+    updateMessageField();
 }
 
 /**
@@ -89,7 +92,7 @@ function updateDateField(evt) {
   let year = evt.date.getUTCFullYear();
 
   dateLabel.text =
-    `${day}` + " " + `${month}` + " " + `${dayOfMonth}` + ", " + `${year}`;
+    `${day}` + " " + `${month}` + " " + `${dayOfMonth}` + ", " + `${year}` + ".";
 }
 
 /**
@@ -108,8 +111,8 @@ function updateTimeGroup(evt) {
   let displayMins = zeroPad(mins);
 
   // display time on main clock
-  hourLabel.text = `${hours}`;
-  minuteLabel.text = `${displayMins}`;
+  hourLabel.text = `${hours}` + ".";
+  minuteLabel.text = `${displayMins}` + ".";
 
   // AM / PM indicator
   amPmLabel.text = rawHours >= 12 ? '"PM".' : '"AM".';
@@ -132,10 +135,29 @@ function zeroPad(i) {
  */
 function updateExerciseFields() {
   if (appbit.permissions.granted("access_activity")) {
-    stepsLabel.text = activity.adjusted.steps;
-    floorsLabel.text = activity.adjusted.elevationGain;
+    stepsLabel.text = activity.adjusted.steps + ".";
+    floorsLabel.text = activity.adjusted.elevationGain + ".";
   } else {
     stepsLabel.text = "----";
     floorsLabel.text = "----";
+  }
+}
+
+/**
+ * Updates the string litteral field value in the DISPLAY statement. 
+ */
+function updateMessageField() {
+  if (battery.charging) {
+    messageLabel.text = '"CHARGING".';
+
+  } else if (
+    appbit.permissions.granted("access_activity") &&
+    activity.adjusted.steps > 10000 &&
+    activity.adjusted.steps < 10100
+  ) {
+    messageLabel.text = '10,000 STEPS!".';
+    
+  } else {
+    messageLabel.text = '"Hello World".';
   }
 }
