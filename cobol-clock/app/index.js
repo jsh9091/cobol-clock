@@ -155,9 +155,33 @@ function updateMessageField() {
     activity.adjusted.steps > 10000 &&
     activity.adjusted.steps < 10100
   ) {
-    messageLabel.text = '10,000 STEPS!".';
+    messageLabel.text = '"10,000 STEPS!".';
     
   } else {
-    messageLabel.text = '"Hello World".';
+    messageLabel.text = '"' + generateRandomMessage() + '".';
   }
+}
+
+/**
+ * Generates a random message for DISPLAY statement. 
+ * @returns 
+ */
+function generateRandomMessage() {
+  const messages = ["Hello World", "Hello there!", "Business Language!", "Yes, it comes in black.", "Dark mode!", "Yes, it has dark mode.", "Go take a walk."
+    , "Go for a run." , "Start Run" , "How about a run?" , "Code like it’s the 60s." , "How was the last walk?" , "This too shall pass." , "This code actually compiled." 
+    , "And so it goes." , "Better times are ahead." , "Take a few deep breaths." , "One day at a time." 
+  ];
+
+  let index = randomIntFromInterval(0, messages.length - 1);
+  return messages[index];
+}
+
+/**
+ * Generates a rundom number in range given, min and max included.
+ * @param {*} min 
+ * @param {*} max 
+ * @returns 
+ */
+function randomIntFromInterval(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
 }
