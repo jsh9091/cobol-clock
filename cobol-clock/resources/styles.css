@@ -23,7 +23,7 @@
  */
 
 .defaultText {
-  font-size: 16;
+  font-size: 20;
   font-family: System-Regular;
   font-weight: regular;
   text-length: 32;
@@ -39,7 +39,7 @@
 }
 
 .value {
-  fill: mediumpurple
+  fill: plum
 }
 
 .comment {
@@ -51,35 +51,35 @@
 }
 
 .area-A-col {
-  x: "56"
+  x: "30"
 }
 
 .variable-name-col {
-  x: "80"
+  x: "55"
 }
 
 .pic-col {
-  x: "161"
+  x: "138"
 }
 
 .open-paren-col {
-  x: "198"
+  x: "180"
 }
 
 .var-size-col {
-  x: "205"
+  x: "188"
 }
 
 .close-paren-col {
-  x: "214"
+  x: "200"
 }
 
 .val-keyword-col {
-  x: "226"
+  x: "215"
 }
 
 .value-col {
-  x: "280"
+  x: "270"
 }
 
 #background {
@@ -89,63 +89,53 @@
 }
 
 .row1 {
-  y:10%
+  y:15%
 }
 
 .row2 {
-  y:16%
-}
-
-.row3 {
   y:22%
 }
 
+.row3 {
+  y:29%
+}
+
 .row4 {
-  y:28%
+  y:36%
 }
 
 .row5 {
-  y:34%
+  y:43%
 }
 
 .row6 {
-  y:40%
+  y:50%
 }
 
 .row7 {
-  y:46%
+  y:57%
 }
 
 .row8 {
-  y:52%
+  y:63%
 }
 
 .row9 {
-  y:58%
-}
-
-.row10 {
-  y:64%
-}
-
-.row11 {
   y:70%
 }
 
+.row10 {
+  y:77%
+}
+
+.row11 {
+  y:84%
+}
+
 .row12 {
-  y:76%
+  y:91%
 }
 
-.row13 {
-  y:82%
-}
 
-.row14 {
-  y:88%
-}
-
-.row15 {
-  y:94%
-}
 
 

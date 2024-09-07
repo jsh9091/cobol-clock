@@ -23,85 +23,80 @@
 
 <svg>
      <rect id="background" />
-     <text class="keyword defaultText row1 area-A-col">
-          IDENTIFICATION DIVISION.</text>
 
-     <text class="keyword defaultText row2 area-A-col">
-          PROGRAM-ID.</text>
-     <text x="153" class="comment defaultText row2">
+     <text class="keyword defaultText row1 area-A-col">
+          Program-Id.</text>
+     <text x="135" class="comment defaultText row1">
           Cobol-clock.</text>
 
+     <text class="keyword defaultText row2 area-A-col">
+          Date-Written.</text>
+     <text x="150" class="comment defaultText  row2" id="dateLabel" />
+
      <text class="keyword defaultText row3 area-A-col">
-          DATE-WRITTEN.</text>
-     <text x="172" class="comment defaultText  row3" id="dateLabel" />
-
+          Data Division.</text>
      <text class="keyword defaultText row4 area-A-col">
-          DATA DIVISION.</text>
-     <text class="keyword defaultText row5 area-A-col">
-          WORKING-STORAGE SECTION.</text>
-     <text class="number defaultText row6 area-A-col">01</text>
-     <text class="defaultText row6 variable-name-col">TIME_GROUP.</text>
+          Working-Storage Section.</text>
 
-     <text class="number defaultText row7 area-A-col">02</text>
-     <text class="defaultText row7 variable-name-col">HOUR</text>
-     <text class="keyword defaultText row7 pic-col">PIC 9</text>
+     <text class="number defaultText row5 area-A-col">01</text>
+     <text class="defaultText row5 variable-name-col">Hour</text>
+     <text class="keyword defaultText row5 pic-col">Pic 9</text>
+     <text class="defaultText row5 open-paren-col">(</text>
+     <text class="number defaultText row5 var-size-col">2</text>
+     <text class="defaultText row5 close-paren-col">)</text>
+     <text class="keyword defaultText row5 val-keyword-col">Value</text>
+     <text class="value defaultText row5 value-col" id="hourLabel" />
+
+     <text class="number defaultText row6 area-A-col">01</text>
+     <text class="defaultText row6 variable-name-col">Minute</text>
+     <text class="keyword defaultText row6 pic-col">Pic 9</text>
+     <text class="defaultText row6 open-paren-col">(</text>
+     <text class="number defaultText row6 var-size-col">2</text>
+     <text class="defaultText row6 close-paren-col">)</text>
+     <text class="keyword defaultText row6 val-keyword-col">Value</text>
+     <text class="value defaultText row6 value-col" id="minuteLabel" />
+
+     <text class="number defaultText row7 area-A-col">01</text>
+     <text class="defaultText row7 variable-name-col">Am_Pm</text>
+     <text class="keyword defaultText row7 pic-col">Pic X</text>
      <text class="defaultText row7 open-paren-col">(</text>
      <text class="number defaultText row7 var-size-col">2</text>
      <text class="defaultText row7 close-paren-col">)</text>
-     <text class="keyword defaultText row7 val-keyword-col">VALUE</text>
-     <text class="value defaultText row7 value-col" id="hourLabel" />
+     <text class="keyword defaultText row7 val-keyword-col">Value</text>
+     <text class="string-literal defaultText row7 value-col" id="amPmLabel" />
 
-     <text class="number defaultText row8 area-A-col">02</text>
-     <text class="defaultText row8 variable-name-col">MINUTE</text>
-     <text class="keyword defaultText row8 pic-col">PIC 9</text>
+     <text class="number defaultText row8 area-A-col">01</text>
+     <text class="defaultText row8 variable-name-col">Steps</text>
+     <text class="keyword defaultText row8 pic-col">Pic 9</text>
      <text class="defaultText row8 open-paren-col">(</text>
-     <text class="number defaultText row8 var-size-col">2</text>
+     <text class="number defaultText row8 var-size-col">5</text>
      <text class="defaultText row8 close-paren-col">)</text>
-     <text class="keyword defaultText row8 val-keyword-col">VALUE</text>
-     <text class="value defaultText row8 value-col" id="minuteLabel" />
+     <text class="keyword defaultText row8 val-keyword-col">Value</text>
+     <text class="value defaultText row8 value-col" id="stepsLabel" />
 
-     <text class="number defaultText row9 area-A-col">02</text>
-     <text class="defaultText row9 variable-name-col">AM_PM</text>
-     <text class="keyword defaultText row9 pic-col">PIC X</text>
+     <text class="number defaultText row9 area-A-col">01</text>
+     <text class="defaultText row9 variable-name-col">Floors</text>
+     <text class="keyword defaultText row9 pic-col">Pic 9</text>
      <text class="defaultText row9 open-paren-col">(</text>
-     <text class="number defaultText row9 var-size-col">2</text>
+     <text class="number defaultText row9 var-size-col">5</text>
      <text class="defaultText row9 close-paren-col">)</text>
-     <text class="keyword defaultText row9 val-keyword-col">VALUE</text>
-     <text class="string-literal defaultText row9 value-col" id="amPmLabel" />
-
-     <text class="number defaultText row10 area-A-col">01</text>
-     <text class="defaultText row10 variable-name-col">STEPS</text>
-     <text class="keyword defaultText row10 pic-col">PIC 9</text>
-     <text class="defaultText row10 open-paren-col">(</text>
-     <text class="number defaultText row10 var-size-col">5</text>
-     <text class="defaultText row10 close-paren-col">)</text>
-     <text class="keyword defaultText row10 val-keyword-col">VALUE</text>
-     <text class="value defaultText row10 value-col" id="stepsLabel" />
-
-     <text class="number defaultText row11 area-A-col">01</text>
-     <text class="defaultText row11 variable-name-col">FLOORS</text>
-     <text class="keyword defaultText row11 pic-col">PIC 9</text>
-     <text class="defaultText row11 open-paren-col">(</text>
-     <text class="number defaultText row11 var-size-col">5</text>
-     <text class="defaultText row11 close-paren-col">)</text>
-     <text class="keyword defaultText row11 val-keyword-col">VALUE</text>
-     <text class="value defaultText row11 value-col" id="floorsLabel" />
+     <text class="keyword defaultText row9 val-keyword-col">Value</text>
+     <text class="value defaultText row9 value-col" id="floorsLabel" />
      
-     <text class="number defaultText row12 area-A-col">01</text>
-     <text class="defaultText row12 variable-name-col">BATTERY</text>
-     <text class="keyword defaultText row12 pic-col">PIC 9</text>
-     <text class="defaultText row12 open-paren-col">(</text>
-     <text class="number defaultText row12 var-size-col">3</text>
-     <text class="defaultText row12 close-paren-col">)</text>
-     <text class="keyword defaultText row12 val-keyword-col">VALUE</text>
-     <text class="value defaultText row12 value-col" id="batteryLabel" />
+     <text class="number defaultText row10 area-A-col">01</text>
+     <text class="defaultText row10 variable-name-col">Battery</text>
+     <text class="keyword defaultText row10 pic-col">Pic 9</text>
+     <text class="defaultText row10 open-paren-col">(</text>
+     <text class="number defaultText row10 var-size-col">3</text>
+     <text class="defaultText row10 close-paren-col">)</text>
+     <text class="keyword defaultText row10 val-keyword-col">Value</text>
+     <text class="value defaultText row10 value-col" id="batteryLabel" />
 
-     <text class="keyword defaultText row13 area-A-col">
-          PROCEDURE DIVISION.</text>
-     <text class="keyword defaultText row14 area-A-col">
-          DISPLAY</text>
-     <text x="122" class="string-literal defaultText row14" id="messageLabel" />
+     <text class="keyword defaultText row11 area-A-col">
+          Procedure Division.</text>
+     <text class="keyword defaultText row12 area-A-col">
+          Display</text>
+     <text x="95" class="string-literal defaultText row12" id="messageLabel" />
 
-     <text class="keyword defaultText row15 area-A-col">
-          STOP RUN.</text>
+
 </svg>
