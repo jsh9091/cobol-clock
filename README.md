@@ -3,4 +3,4 @@ Have you ever found yourself looking at your smartwatch and wishing the watch-fa
 
 Note: This is essentially a gag watch face. 
 
-This watch face is not yet published to the Fitbit App Store. [Fitbit App Gallery listing]([https://www.example.com](https://gallery.fitbit.com/details/95ee1b5e-7d19-4603-bb72-4ba490b324fd?key=fb328fcb-10c2-4c2e-93ce-500d47845e9b))
+This watch face is not yet published to the Fitbit App Store. [Fitbit App Gallery listing](https://gallery.fitbit.com/details/95ee1b5e-7d19-4603-bb72-4ba490b324fd?key=fb328fcb-10c2-4c2e-93ce-500d47845e9b)
